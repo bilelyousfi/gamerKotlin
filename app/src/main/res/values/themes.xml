@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Mystore" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/colorPrimary</item>
+
+    </style>
+
+
+    <style name="Theme.Mystore" parent="Base.Theme.Mystore" />
+
+    <style name="Theme.App.MySplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.Mystore</item>
+    </style>
+
+
+
+</resources>

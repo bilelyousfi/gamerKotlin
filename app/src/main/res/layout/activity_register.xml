@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="357dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="52dp"
+        android:text="Submit"
+        android:textSize="16sp"
+        android:layout_margin="40sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="357dp"
+        android:layout_height="61dp"
+        android:layout_margin="20sp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/customedittext"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="FullName"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="357dp"
+        android:layout_height="61dp"
+        android:layout_margin="20sp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/customedittext"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="357dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/customedittext"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="20sp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawableRight="@drawable/baseline_visibility_24"
+        android:padding="10sp"
+        android:longClickable="false"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="357dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="25dp"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/colorPrimary"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:startIconTint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="357dp"
+            android:layout_height="61dp"
+            android:inputType="textPassword"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="315dp"
+        android:layout_height="51dp"
+        android:layout_margin="20sp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="5sp"
+        android:text="@string/terme"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <ImageButton
+        android:id="@+id/retour"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
