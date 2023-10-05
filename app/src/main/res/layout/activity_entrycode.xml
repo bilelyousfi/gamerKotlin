@@ -6,60 +6,97 @@
     android:layout_height="match_parent"
     tools:context=".Entrycode">
 
-    <ImageButton
-        android:id="@+id/retourcode"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
-        android:layout_marginTop="16dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="364dp"
         android:layout_height="70dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="80dp"
         android:paddingStart="15sp"
         android:text="Enter the code sent to you by Email or Mobile number"
+        android:textAlignment="center"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <EditText
-        android:id="@+id/editTextText6"
-        android:layout_width="357sp"
-        android:layout_height="61sp"
-        android:layout_marginTop="44dp"
+        android:id="@+id/editTextNumber1"
+        android:layout_width="71sp"
+        android:layout_height="75sp"
         android:ems="10"
-        android:hint="Enter code"
-        android:inputType="text"
-        android:paddingStart="20sp"
-        android:textAlignment="center"
-        android:textColorHint="@color/colorPrimary"
+        android:inputType="number"
+        android:maxLength="1"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="71sp"
+        android:layout_height="75sp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="71sp"
+        android:layout_height="75sp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="71sp"
+        android:layout_height="75sp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332" />
 
     <Button
         android:id="@+id/verifycode"
         android:layout_width="357sp"
         android:layout_height="57sp"
-        android:layout_marginTop="71dp"
+        android:backgroundTint="@color/colorPrimary"
         android:text="Verify"
         android:textSize="16sp"
         app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView7"
@@ -73,19 +110,31 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/verifycode"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Resnnt"
-        android:textSize="16sp"
         android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.447" />
+        app:layout_constraintVertical_bias="0.176" />
+
+    <TextView
+        android:id="@+id/retourcode"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:background="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
